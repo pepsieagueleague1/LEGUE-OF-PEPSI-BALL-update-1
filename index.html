@@ -803,13 +803,13 @@ self.addEventListener('notificationclick', e => {
     <button class="otab" id="ot-live" onclick="switchOTab(this,'op-live');renderOrgLive()"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="8"/></svg> Live Score</button>
     <button class="otab" id="ot-pts" onclick="switchOTab(this,'op-pts');renderOrgPoints()"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg> Points</button>
     <button class="otab" id="ot-ostats" onclick="switchOTab(this,'op-ostats');renderOrgStats()"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" x2="18" y1="20" y2="10"/><line x1="12" x2="12" y1="20" y2="4"/><line x1="6" x2="6" y1="20" y2="14"/></svg> Stats</button>
-    <button class="otab" id="ot-groups" onclick="switchOTab(this,'op-groups');loadGroupsDash()">âï¸ Groups</button>
+    <button class="otab" id="ot-groups" onclick="switchOTab(this,'op-groups');loadGroupsDash()"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="14.5 17.5 3 6 3 3 6 3 17.5 14.5"/><line x1="13" x2="19" y1="19" y2="13"/><line x1="16" x2="20" y1="16" y2="20"/><line x1="19" x2="21" y1="21" y2="19"/><polyline points="14.5 6.5 18 3 21 3 21 6 17.5 9.5"/><line x1="5" x2="9" y1="14" y2="18"/><line x1="7" x2="4" y1="17" y2="20"/><line x1="3" x2="5" y1="19" y2="21"/></svg> Groups</button>
     <button class="otab" id="ot-sched" onclick="switchOTab(this,'op-sched');renderOrgSched()"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg> Schedule</button>
     <button class="otab" id="ot-banners" onclick="switchOTab(this,'op-banners');renderBannerEditor()"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg> Banners</button>
-    <button class="otab" id="ot-overview" onclick="switchOTab(this,'op-overview');renderOrgOverviewEditor()"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></svg>ï¸ Overview</button>
+    <button class="otab" id="ot-overview" onclick="switchOTab(this,'op-overview');renderOrgOverviewEditor()"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></svg> Overview</button>
     <button class="otab" id="ot-pushnotif" onclick="switchOTab(this,'op-pushnotif');renderOrgPushNotif()"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg> Notify</button>
     <button class="otab" id="ot-recent" onclick="switchOTab(this,'op-recent');renderOrgRecentMatches()"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg> Results</button>
-    <button class="otab" id="ot-settings" onclick="switchOTab(this,'op-settings');renderOrgSettings()">âï¸ Settings</button>
+    <button class="otab" id="ot-settings" onclick="switchOTab(this,'op-settings');renderOrgSettings()">â Settings</button>
     <button class="otab" id="ot-chat" onclick="switchOTab(this,'op-chat');renderOrgChat()"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg> Chat Mod</button>
     <button class="otab" id="ot-voting" onclick="switchOTab(this,'op-voting');renderOrgVoting()"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><path d="M5 7c0-1.1.9-2 2-2h10a2 2 0 0 1 2 2v12H5V7Z"/><path d="M22 19H2"/></svg> Voting</button>
   </div>
@@ -836,7 +836,7 @@ self.addEventListener('notificationclick', e => {
       <div class="hint-bar">Drag teams from the pool into groups. Add or remove groups as needed. Save when done.</div>
       <div class="grp-pool"><div class="pool-lbl">â¸ UNASSIGNED</div><div class="dzone" id="dz-pool" ondragover="dzOver(event)" ondrop="dzDrop(event,'pool')"></div></div>
       <div id="dynamic-groups"></div>
-      <button class="btn-add-grp" onclick="addGroup()">ï¼ Add Group</button>
+      <button class="btn-add-grp" onclick="addGroup()">+ Add Group</button>
       <button class="btn-save-grp" onclick="saveGroups()"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15.2 3a2 2 0 0 1 1.4.6l3.8 3.8a2 2 0 0 1 .6 1.4V19a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"/><path d="M17 21v-7a1 1 0 0 0-1-1H8a1 1 0 0 0-1 1v7"/><path d="M7 3v4a1 1 0 0 0 1 1h7"/></svg> Save Groups</button>
       <div class="grp-saved-msg" id="grp-ok"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg> Groups Saved!</div>
     </div>
@@ -866,7 +866,7 @@ self.addEventListener('notificationclick', e => {
         <div class="banner-editor-title" style="color:var(--gold)"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.21 15 2.66 7.14a2 2 0 0 1 .13-2.2L4.4 2.8A2 2 0 0 1 6 2h12a2 2 0 0 1 1.6.8l1.6 2.14a2 2 0 0 1 .14 2.2L16.79 15"/><path d="M11 12 5.12 2.2"/><path d="m13 12 5.88-9.8"/><path d="M8 7h8"/><circle cx="12" cy="17" r="5"/><path d="M12 18v-2h-.5"/></svg> Sponsor Logos</div>
         <div class="hint-bar" style="margin-bottom:10px">Upload sponsor/brand logos. They appear as a strip below the ticker for all viewers. Synced online instantly.</div>
         <div id="sponsor-logo-slots"></div>
-        <button onclick="addSponsorSlot()" style="width:100%;padding:10px;background:rgba(240,180,41,0.08);border:1.5px dashed rgba(240,180,41,0.35);border-radius:var(--r-sm);color:var(--gold);font-family:'Barlow Condensed',sans-serif;font-size:13px;font-weight:700;cursor:pointer;margin-top:6px">ï¼ Add Sponsor Slot</button>
+        <button onclick="addSponsorSlot()" style="width:100%;padding:10px;background:rgba(240,180,41,0.08);border:1.5px dashed rgba(240,180,41,0.35);border-radius:var(--r-sm);color:var(--gold);font-family:'Barlow Condensed',sans-serif;font-size:13px;font-weight:700;cursor:pointer;margin-top:6px">+ Add Sponsor Slot</button>
         <button onclick="saveSponsors()" style="width:100%;padding:11px;background:linear-gradient(135deg,var(--gold),#c47d10);border:none;border-radius:var(--r-sm);color:#000;font-family:'Bebas Neue',cursive;font-size:16px;letter-spacing:2px;cursor:pointer;margin-top:8px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15.2 3a2 2 0 0 1 1.4.6l3.8 3.8a2 2 0 0 1 .6 1.4V19a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"/><path d="M17 21v-7a1 1 0 0 0-1-1H8a1 1 0 0 0-1 1v7"/><path d="M7 3v4a1 1 0 0 0 1 1h7"/></svg> Publish Sponsors</button>
         <div id="sponsors-ok" style="display:none;color:var(--green);font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:700;letter-spacing:1px;text-align:center;margin-top:8px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg> Sponsors Synced!</div>
       </div>
@@ -962,7 +962,7 @@ self.addEventListener('notificationclick', e => {
 
     <div class="tab-panel" id="tp-groups">
       <div class="card">
-        <div class="card-header"><div class="card-icon">âï¸</div><div class="card-title">Group Stage</div></div>
+        <div class="card-header"><div class="card-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="14.5 17.5 3 6 3 3 6 3 17.5 14.5"/><line x1="13" x2="19" y1="19" y2="13"/><line x1="16" x2="20" y1="16" y2="20"/><line x1="19" x2="21" y1="21" y2="19"/><polyline points="14.5 6.5 18 3 21 3 21 6 17.5 9.5"/><line x1="5" x2="9" y1="14" y2="18"/><line x1="7" x2="4" y1="17" y2="20"/><line x1="3" x2="5" y1="19" y2="21"/></svg></div><div class="card-title">Group Stage</div></div>
         <div class="group-tabs" id="grp-tabs"></div>
         <div id="grp-panels-container"></div>
       </div>
@@ -979,9 +979,9 @@ self.addEventListener('notificationclick', e => {
         <div class="stats-tabs" style="overflow-x:auto;flex-wrap:nowrap;padding-bottom:4px">
           <button class="stats-tab active" onclick="switchStatsTab(this,'st-runs')"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m4.93 4.93 4.24 4.24"/><path d="m14.83 9.17 4.24-4.24"/><path d="m14.83 14.83 4.24 4.24"/><path d="m9.17 14.83-4.24 4.24"/><circle cx="12" cy="12" r="4"/></svg> Runs</button>
           <button class="stats-tab" onclick="switchStatsTab(this,'st-wkts')"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="9" cy="10" r="1" fill="currentColor"/><circle cx="13" cy="8" r="1" fill="currentColor"/><circle cx="13" cy="13" r="1" fill="currentColor"/></svg> Wickets</button>
-          <button class="stats-tab" onclick="switchStatsTab(this,'st-sixes')">6ï¸â£ Sixes</button>
-          <button class="stats-tab" onclick="switchStatsTab(this,'st-fours')">4ï¸â£ Fours</button>
-          <button class="stats-tab" onclick="switchStatsTab(this,'st-matches')"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14a9 3 0 0 0 18 0V5"/><path d="M12 12a9 3 0 0 0 9-3"/><path d="M3 9a9 3 0 0 0 9 3"/></svg>ï¸ Matches</button>
+          <button class="stats-tab" onclick="switchStatsTab(this,'st-sixes')">6 Sixes</button>
+          <button class="stats-tab" onclick="switchStatsTab(this,'st-fours')">4 Fours</button>
+          <button class="stats-tab" onclick="switchStatsTab(this,'st-matches')"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14a9 3 0 0 0 18 0V5"/><path d="M12 12a9 3 0 0 0 9-3"/><path d="M3 9a9 3 0 0 0 9 3"/></svg> Matches</button>
         </div>
         <div class="stats-panel active" id="st-runs"></div>
         <div class="stats-panel" id="st-wkts"></div>
@@ -994,7 +994,7 @@ self.addEventListener('notificationclick', e => {
         <div class="card-header"><div class="card-icon" style="background:rgba(0,214,143,0.14);border-color:rgba(0,214,143,0.28)"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="9" cy="10" r="1" fill="currentColor"/><circle cx="13" cy="8" r="1" fill="currentColor"/><circle cx="13" cy="13" r="1" fill="currentColor"/></svg></div><div class="card-title" style="color:var(--green)">Bowler Stats</div></div>
         <div class="stats-tabs" style="overflow-x:auto;flex-wrap:nowrap;padding-bottom:4px">
           <button class="stats-tab bowl-tab active-bowl" onclick="switchBowlTab(this,'sb-wkts')"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="9" cy="10" r="1" fill="currentColor"/><circle cx="13" cy="8" r="1" fill="currentColor"/><circle cx="13" cy="13" r="1" fill="currentColor"/></svg> Wickets</button>
-          <button class="stats-tab bowl-tab" onclick="switchBowlTab(this,'sb-matches')"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14a9 3 0 0 0 18 0V5"/><path d="M12 12a9 3 0 0 0 9-3"/><path d="M3 9a9 3 0 0 0 9 3"/></svg>ï¸ Matches</button>
+          <button class="stats-tab bowl-tab" onclick="switchBowlTab(this,'sb-matches')"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14a9 3 0 0 0 18 0V5"/><path d="M12 12a9 3 0 0 0 9-3"/><path d="M3 9a9 3 0 0 0 9 3"/></svg> Matches</button>
           <button class="stats-tab bowl-tab" onclick="switchBowlTab(this,'sb-econ')"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg> Economy</button>
         </div>
         <div class="stats-panel active" id="sb-wkts"></div>
@@ -1008,7 +1008,7 @@ self.addEventListener('notificationclick', e => {
         <div class="card-header"><div class="card-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg></div><div class="card-title">Match Schedule</div></div>
         <div id="sched-filter-bar" style="display:flex;gap:8px;margin-bottom:12px">
           <button class="sched-filter-btn active" id="sfb-all" onclick="setSchedFilter('all')"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m4.93 4.93 4.24 4.24"/><path d="m14.83 9.17 4.24-4.24"/><path d="m14.83 14.83 4.24 4.24"/><path d="m9.17 14.83-4.24 4.24"/><circle cx="12" cy="12" r="4"/></svg> All Matches</button>
-          <button class="sched-filter-btn" id="sfb-my" onclick="setSchedFilter('my')" id="sfb-my">â­ My Matches</button>
+          <button class="sched-filter-btn" id="sfb-my" onclick="setSchedFilter('my')" id="sfb-my"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg> My Matches</button>
         </div>
         <div id="sched-content"><div class="loader">LOADING</div></div>
       </div>
@@ -1172,7 +1172,7 @@ self.addEventListener('notificationclick', e => {
 
 <div class="delete-overlay" id="del-overlay">
   <div class="delete-box">
-    <div style="font-size:36px">â ï¸</div>
+    <div style="font-size:36px"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg></div>
     <div style="font-family:'Bebas Neue',cursive;font-size:clamp(20px,6vw,26px);letter-spacing:3px;color:var(--red);margin:8px 0 4px">REMOVING TEAM</div>
     <div class="delete-count" id="del-count">4</div>
     <div class="delete-msg">Your team will be permanently deleted.<br>Tap cancel to stop.</div>
@@ -1278,7 +1278,7 @@ function loginVisitor(){
 }
 
 function loginOrg(){
-  if(document.getElementById("org-pin").value !== ORG_PASS){ alert("<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m15 9-6 6"/><path d="m9 9 6 6"/></svg> Incorrect Password."); document.getElementById("org-pin").value=""; return; }
+  if(document.getElementById("org-pin").value !== ORG_PASS){ alert("Incorrect Password."); document.getElementById("org-pin").value=""; return; }
   localStorage.setItem("psl_session", "admin");
   document.getElementById("scr-org").classList.add("hide");
   document.getElementById("main-app").style.display = "";
@@ -1606,7 +1606,7 @@ function renderSchedContent(sched){
     }
 
     return `<div class="match-card" style="${isMyMatch?"border-color:rgba(240,180,41,0.4);background:linear-gradient(135deg,rgba(240,180,41,0.06),rgba(11,17,32,0.95))":""}${isLive?"border-color:rgba(228,0,43,0.45);background:linear-gradient(135deg,rgba(228,0,43,0.07),rgba(11,17,32,0.95))":""}">
-      ${isMyMatch?`<div style="font-size:9px;font-weight:700;letter-spacing:2px;color:var(--gold);margin-bottom:4px">â­ YOUR MATCH</div>`:""}
+      ${isMyMatch?`<div style="font-size:9px;font-weight:700;letter-spacing:2px;color:var(--gold);margin-bottom:4px"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg> YOUR MATCH</div>`:""}
       ${statusBadge}
       <div class="match-date"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg> ${dateStr} ${m.time||""}</div>
       <div class="match-teams">
@@ -1684,14 +1684,14 @@ async function uploadImg(input, prevId, hidId){
   const reader = new FileReader();
   reader.onload = e=>{ prev.src=e.target.result; prev.style.display="block"; };
   reader.readAsDataURL(file);
-  lbl.innerText="<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 22h14"/><path d="M5 2h14"/><path d="M17 22v-4.172a2 2 0 0 0-.586-1.414L12 12l-4.414 4.414A2 2 0 0 0 7 17.828V22"/><path d="M7 2v4.172a2 2 0 0 0 .586 1.414L12 12l4.414-4.414A2 2 0 0 0 17 6.172V2"/></svg> Uploadingâ¦"; lbl.style.color="var(--gold)";
+ lbl.innerText="Uploadingâ¦"; lbl.style.color="var(--gold)";
   const fd = new FormData(); fd.append("image", file);
   try{
     const r = await fetch(`https://api.imgbb.com/1/upload?key=${IMGBB}`,{method:"POST",body:fd});
     const j = await r.json();
-    if(j.success){ hid.value=j.data.url; lbl.innerText="<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg> Done"; lbl.style.color="var(--green)"; }
-    else{ lbl.innerText="<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m15 9-6 6"/><path d="m9 9 6 6"/></svg> Failed"; lbl.style.color="var(--orange)"; }
-  }catch{ lbl.innerText="<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m15 9-6 6"/><path d="m9 9 6 6"/></svg> Error"; lbl.style.color="var(--orange)"; }
+ if(j.success){ hid.value=j.data.url; lbl.innerText="Done"; lbl.style.color="var(--green)"; }
+ else{ lbl.innerText="Failed"; lbl.style.color="var(--orange)"; }
+ }catch{ lbl.innerText="Error"; lbl.style.color="var(--orange)"; }
 }
 
 function validateReg(){
@@ -1704,7 +1704,7 @@ function validateReg(){
   pnames.forEach((inp,i)=>{ if(!inp.value.trim()){ missing.push(i+1); inp.classList.add("err"); } });
   if(missing.length) errs.push(`Player name(s) missing for: ${missing.map(n=>n===1?"Player 1 (Captain)":"Player "+n).join(", ")}.`);
   const errEl=document.getElementById("reg-err");
-  if(errs.length){ errEl.innerHTML="â ï¸ "+errs.join("<br>â ï¸ "); errEl.classList.add("show"); errEl.scrollIntoView({behavior:"smooth",block:"nearest"}); return false; }
+  if(errs.length){ errEl.innerHTML="WARNING: "+errs.join("<br>WARNING: "); errEl.classList.add("show"); errEl.scrollIntoView({behavior:"smooth",block:"nearest"}); return false; }
   errEl.classList.remove("show"); return true;
 }
 
@@ -1721,7 +1721,7 @@ async function submitReg(){
   const rnames=[...document.querySelectorAll(".r-name")].map(i=>i.value.trim().toUpperCase()||"EMPTY");
   const rurls=[...document.querySelectorAll(".r-url")].map(i=>i.value||DEFAULT_AVG);
   
-  btn.disabled=true; btn.innerText="<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 22h14"/><path d="M5 2h14"/><path d="M17 22v-4.172a2 2 0 0 0-.586-1.414L12 12l-4.414 4.414A2 2 0 0 0 7 17.828V22"/><path d="M7 2v4.172a2 2 0 0 0 .586 1.414L12 12l4.414-4.414A2 2 0 0 0 17 6.172V2"/></svg> SYNCINGâ¦";
+ btn.disabled=true; btn.innerText="SYNCINGâ¦";
   
   try{
     // Auto-generate 2-digit team code based on current database
@@ -1733,7 +1733,7 @@ async function submitReg(){
 
     const r=await fetch(API,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(payload)});
     if(r.ok){
-      alert(`<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5.8 11.3 2 22l10.7-3.79"/><path d="M4 3h.01"/><path d="M22 8h.01"/><path d="M15 2h.01"/><path d="M22 20h.01"/><path d="m22 2-2.24.75a2.9 2.9 0 0 0-1.96 3.12c.1.86-.57 1.63-1.45 1.63h-.38c-.86 0-1.6.6-1.76 1.44L14 10"/><path d="m22 13-.82-.33c-.86-.34-1.82.2-1.98 1.11c-.11.7-.72 1.22-1.43 1.22H17"/><path d="m11 2 .33.82c.34.86-.2 1.82-1.11 1.98C9.52 4.9 9 5.52 9 6.23V7"/><path d="M11 13c1.93 1.93 2.83 4.17 2 5-.83.83-3.07-.07-5-2-1.93-1.93-2.83-4.17-2-5 .83-.83 3.07.07 5 2Z"/></svg> Team registered successfully! Your Team Code is: ${newCode}. Please share this code with your squad.`);
+      alert(`Team registered successfully! Your Team Code is: ${newCode}. Please share this code with your squad.`);
       
       // Auto-login to the new team to establish links smoothly
       localStorage.setItem("psl_code", newCode);
@@ -1747,7 +1747,7 @@ async function submitReg(){
       switchTab(document.getElementById("bn-table"),"tp-table");
     }else alert("Database error. Try again.");
   }catch{ alert("Network error. Check connection."); }
-  finally{ btn.disabled=false; btn.innerText="<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg> SYNC SQUAD ONLINE"; }
+ finally{ btn.disabled=false; btn.innerText="SYNC SQUAD ONLINE"; }
 }
 
 // ââââââââââââââââââââââââââââââââ
@@ -1787,14 +1787,14 @@ function renderMyTeam(){
   </div>
   ${isCap?`
   <div class="card">
-    <div class="card-header"><div class="card-icon" style="background:rgba(240,180,41,0.14);border-color:rgba(240,180,41,0.28)">âï¸</div><div class="card-title" style="color:var(--gold)">Captain Controls</div></div>
+    <div class="card-header"><div class="card-icon" style="background:rgba(240,180,41,0.14);border-color:rgba(240,180,41,0.28)">â</div><div class="card-title" style="color:var(--gold)">Captain Controls</div></div>
     <button class="action-btn" onclick="openEditModal()">
-      <div class="action-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/></svg>ï¸</div>
+      <div class="action-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/></svg></div>
       <div class="action-info"><div class="action-title">Edit Team Info</div><div class="action-sub">Update name, logo, players</div></div>
       <div class="action-arr">âº</div>
     </button>
     <button class="action-btn danger" onclick="startDelete()">
-      <div class="action-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/></svg>ï¸</div>
+      <div class="action-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/></svg></div>
       <div class="action-info"><div class="action-title">Remove My Team</div><div class="action-sub">Permanently delete this team</div></div>
       <div class="action-arr" style="color:var(--red)">âº</div>
     </button>
@@ -1832,7 +1832,7 @@ async function doDeleteTeam(){
     myTeam=null; myRole=null;
     localStorage.removeItem("psl_code");
     document.getElementById("myteam-dot").classList.remove("show");
-    alert("<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg> Your team has been removed.");
+    alert("Your team has been removed.");
     renderMyTeam(); loadStandings();
   }catch{ alert("Network error during deletion."); }
 }
@@ -1884,7 +1884,7 @@ async function saveEditTeam(){
   const payload={...myTeam,team_name:tname,owner,mobile,players:pnames,photos:newPhotos};
   try{
     const r=await fetch(`${API}/${myTeam.id}`,{method:"PUT",headers:{"Content-Type":"application/json"},body:JSON.stringify(payload)});
-    if(r.ok){ myTeam=await r.json(); closeEditModal(); renderMyTeam(); loadStandings(); alert("<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg> Team updated!"); }
+    if(r.ok){ myTeam=await r.json(); closeEditModal(); renderMyTeam(); loadStandings(); alert("Team updated!"); }
     else alert("Failed to save. Try again.");
   }catch{ alert("Network error."); }
 }
@@ -1927,7 +1927,7 @@ function markAllRead(){
   document.querySelectorAll(".notif-item").forEach(el=>{
     el.classList.add("seen");
     const tag=el.querySelector(".new-tag"); if(tag) tag.remove();
-    const st=el.querySelector(".notif-status"); if(st) st.innerText="<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> SEEN";
+ const st=el.querySelector(".notif-status"); if(st) st.innerText="SEEN";
   });
   document.getElementById("ndot").classList.remove("show");
 }
@@ -1953,9 +1953,9 @@ async function loadOrgTeams(){
           <div class="org-tmeta">Code: <b style="color:var(--gold)">${code}</b> Â· ${team.pts||0} pts</div>
         </div>
         <div class="org-tactions">
-          <button class="btn-assign" onclick="openOrgEditTeam('${team.id}')"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/></svg>ï¸ Edit</button>
+          <button class="btn-assign" onclick="openOrgEditTeam('${team.id}')"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/></svg> Edit</button>
           <button class="btn-assign" onclick="openCodeModal('${team.id}')"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="7.5" cy="15.5" r="5.5"/><path d="m21 2-9.6 9.6"/><path d="m15.5 7.5 3 3L22 7l-3-3"/></svg> Code</button>
-          <button class="btn-del-sm" onclick="orgDelTeam('${team.id}')"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/></svg>ï¸ Del</button>
+          <button class="btn-del-sm" onclick="orgDelTeam('${team.id}')"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/></svg> Del</button>
         </div>
       </div>`;
     }).join("");
@@ -2034,7 +2034,7 @@ async function saveOrgEditTeam(){
     const r = await fetch(`${API}/${team.id}`,{method:"PUT",headers:{"Content-Type":"application/json"},body:JSON.stringify(payload)});
     if(r.ok){
       closeEditModal(); loadOrgTeams(); loadStandings();
-      alert("<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg> Team updated successfully!");
+      alert("Team updated successfully!");
     } else alert("Failed to save. Try again.");
   } catch{ alert("Network error."); }
   orgEditTeam = null;
@@ -2065,7 +2065,7 @@ async function saveTeamCode(){
     await fetch(`${API}/${codeModalTeam.id}`,{method:"PUT",headers:{"Content-Type":"application/json"},body:JSON.stringify(payload)});
     document.getElementById("code-modal-val").innerText=code;
     codeModalTeam.team_code=code; codeModalTeam.captain_code=code;
-    alert(`<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg> Code "${code}" assigned! Share with captain and players.`);
+    alert(`Code "${code}"assigned! Share with captain and players.`);
     loadOrgTeams(); loadOrgNotifs();
   }catch{ alert("Network error."); }
 }
@@ -2215,8 +2215,8 @@ function renderSchedList(){
           ${resultHtml}
         </div>
         <div class="sched-item-actions">
-          <button class="btn-edit-match" onclick="openEditMatch(${i})"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/></svg>ï¸ Edit</button>
-          <button class="btn-delete-match" onclick="deleteMatch(${i})"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/></svg>ï¸ Del</button>
+          <button class="btn-edit-match" onclick="openEditMatch(${i})"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/></svg> Edit</button>
+          <button class="btn-delete-match" onclick="deleteMatch(${i})"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/></svg> Del</button>
         </div>
       </div>
       <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
@@ -2286,7 +2286,7 @@ function openEditMatch(i){
 
   modal.innerHTML = `
   <div style="background:#0f1929;border:1px solid rgba(26,143,255,0.3);border-radius:16px;padding:22px 18px;width:100%;max-width:400px;box-shadow:0 0 60px rgba(0,0,0,0.7);animation:popIn .3s cubic-bezier(.34,1.56,.64,1) both">
-    <div style="font-family:'Bebas Neue',cursive;font-size:20px;letter-spacing:3px;color:var(--gold);margin-bottom:4px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/></svg>ï¸ Edit Match</div>
+    <div style="font-family:'Bebas Neue',cursive;font-size:20px;letter-spacing:3px;color:var(--gold);margin-bottom:4px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/></svg> Edit Match</div>
     <div style="font-family:'Barlow Condensed',sans-serif;font-size:13px;font-weight:700;color:var(--blue);letter-spacing:1px;margin-bottom:16px">${t1.team_name} <span style="color:var(--muted)">vs</span> ${t2.team_name}</div>
 
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:10px">
@@ -2316,7 +2316,7 @@ function openEditMatch(i){
     </div>
 
     <div style="display:flex;gap:8px">
-      <button onclick="saveMatchEdit()" style="flex:1;padding:13px;background:linear-gradient(135deg,var(--blue),var(--blue2));border:none;border-radius:10px;color:#fff;font-family:'Bebas Neue',cursive;font-size:17px;letter-spacing:2px;cursor:pointer">âï¸ SAVE & SYNC</button>
+      <button onclick="saveMatchEdit()" style="flex:1;padding:13px;background:linear-gradient(135deg,var(--blue),var(--blue2));border:none;border-radius:10px;color:#fff;font-family:'Bebas Neue',cursive;font-size:17px;letter-spacing:2px;cursor:pointer"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/></svg> SAVE & SYNC</button>
       <button onclick="closeMatchEditModal()" style="padding:13px 16px;background:rgba(255,255,255,0.05);border:1px solid var(--border2);border-radius:10px;color:var(--muted);font-family:'Barlow Condensed',sans-serif;font-size:13px;font-weight:700;cursor:pointer">Cancel</button>
     </div>
   </div>`;
@@ -2348,7 +2348,7 @@ async function saveMatchEdit(){
 
   const btns = document.querySelectorAll("#match-edit-modal button");
   const saveBtn = btns[0];
-  if(saveBtn){ saveBtn.innerText = "<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 22h14"/><path d="M5 2h14"/><path d="M17 22v-4.172a2 2 0 0 0-.586-1.414L12 12l-4.414 4.414A2 2 0 0 0 7 17.828V22"/><path d="M7 2v4.172a2 2 0 0 0 .586 1.414L12 12l4.414-4.414A2 2 0 0 0 17 6.172V2"/></svg> Syncingâ¦"; saveBtn.disabled = true; }
+ if(saveBtn){ saveBtn.innerText = "Syncingâ¦"; saveBtn.disabled = true; }
   // Re-sort schedule by date/time after edit
   sched.sort((a,b)=>{
     const da = a.date||"9999-99-99", db = b.date||"9999-99-99";
@@ -2358,7 +2358,7 @@ async function saveMatchEdit(){
   });
   await saveScheduleToAPI(sched);
   schedule = sched;
-  if(saveBtn){ saveBtn.innerText = "<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg> Saved!"; saveBtn.disabled = false; }
+ if(saveBtn){ saveBtn.innerText = "Saved!"; saveBtn.disabled = false; }
   setTimeout(()=>{ closeMatchEditModal(); renderSchedList(); }, 700);
 }
 
@@ -2389,7 +2389,7 @@ async function addMatch(){
   if(t1===t2){ alert("Teams must be different."); return; }
   const t1obj=allTeams.find(t=>t.id===t1); const t2obj=allTeams.find(t=>t.id===t2);
   const btn = document.querySelector(".btn-add-match");
-  btn.innerText="<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 22h14"/><path d="M5 2h14"/><path d="M17 22v-4.172a2 2 0 0 0-.586-1.414L12 12l-4.414 4.414A2 2 0 0 0 7 17.828V22"/><path d="M7 2v4.172a2 2 0 0 0 .586 1.414L12 12l4.414-4.414A2 2 0 0 0 17 6.172V2"/></svg> Savingâ¦"; btn.disabled=true;
+ btn.innerText="Savingâ¦"; btn.disabled=true;
   schedule.push({t1,t2,t1name:t1obj?.team_name,t2name:t2obj?.team_name,date,time,venue});
   // Auto-sort by date then time so earlier matches appear first
   schedule.sort((a,b)=>{
@@ -2483,7 +2483,7 @@ function renderOrgOverviewEditor(){
   const ov = JSON.parse(localStorage.getItem("psl_overview")||"null") || DEFAULT_OVERVIEW;
   el.innerHTML = `
   <div class="overview-editor">
-    <div class="overview-editor-title"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></svg>ï¸ App Overview Card</div>
+    <div class="overview-editor-title"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></svg> App Overview Card</div>
     <div class="hint-bar" style="margin-bottom:12px">This card appears on the home tab for all users. Changes sync online instantly when you publish.</div>
 
     <div class="form-group">
@@ -2678,7 +2678,7 @@ async function renderOrgSettings(){
   const s = getMatchSettings();
   el.innerHTML = `
   <div class="card">
-    <div class="card-header"><div class="card-icon" style="background:rgba(240,180,41,0.14);border-color:rgba(240,180,41,0.28)">âï¸</div><div class="card-title" style="color:var(--gold)">Match Settings</div></div>
+    <div class="card-header"><div class="card-icon" style="background:rgba(240,180,41,0.14);border-color:rgba(240,180,41,0.28)">â</div><div class="card-title" style="color:var(--gold)">Match Settings</div></div>
     <div class="hint-bar">These settings sync automatically to the player registration page.</div>
     <div class="form-group" style="margin-bottom:13px">
       <label class="form-label">Total Overs Per Match</label>
@@ -2781,7 +2781,7 @@ function renderSponsorSlots(){
 async function uploadSponsorLogo(inp){
   if(!inp.files[0]) return;
   const btn = document.querySelector("label[for='sponsor-upload-inp']");
-  if(btn) btn.textContent = "<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 22h14"/><path d="M5 2h14"/><path d="M17 22v-4.172a2 2 0 0 0-.586-1.414L12 12l-4.414 4.414A2 2 0 0 0 7 17.828V22"/><path d="M7 2v4.172a2 2 0 0 0 .586 1.414L12 12l4.414-4.414A2 2 0 0 0 17 6.172V2"/></svg> Uploadingâ¦";
+  if(btn) btn.textContent = "Uploadingâ¦";
   try{
     const fd = new FormData(); fd.append("image", inp.files[0]);
     const r = await fetch(`https://api.imgbb.com/1/upload?key=${IMGBB}`, {method:"POST",body:fd});
@@ -2791,7 +2791,7 @@ async function uploadSponsorLogo(inp){
       renderSponsorSlots();
     } else { alert("Upload failed. Try again."); }
   } catch(e){ alert("Network error."); }
-  if(btn) btn.textContent = "<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"/></svg> Upload Sponsor Logo";
+  if(btn) btn.textContent = "Upload Sponsor Logo";
 }
 
 function addSponsorSlot(){
@@ -3040,19 +3040,19 @@ function renderLiveOrgActions(s){
     </div>
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:8px">
       <button onclick="openLiveEditFromViewer()" style="padding:12px 8px;background:rgba(26,143,255,0.12);border:1.5px solid rgba(26,143,255,0.4);border-radius:var(--r-sm);color:var(--blue);font-family:'Bebas Neue',cursive;font-size:15px;letter-spacing:2px;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:4px;-webkit-appearance:none">
-        <span style="font-size:18px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/></svg>ï¸</span>
+        <span style="font-size:18px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/></svg></span>
         <span>EDIT MATCH</span>
       </button>
       <button onclick="syncLiveNow(this)" style="padding:12px 8px;background:rgba(0,214,143,0.1);border:1.5px solid rgba(0,214,143,0.4);border-radius:var(--r-sm);color:var(--green);font-family:'Bebas Neue',cursive;font-size:15px;letter-spacing:2px;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:4px;-webkit-appearance:none">
-        <span style="font-size:18px">âï¸</span>
+        <span style="font-size:18px"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/></svg></span>
         <span>SYNC ONLINE</span>
       </button>
     </div>
     <button onclick="removeLiveMatchFromViewer()" style="width:100%;padding:12px;background:rgba(228,0,43,0.1);border:1.5px solid rgba(228,0,43,0.4);border-radius:var(--r-sm);color:var(--red);font-family:'Bebas Neue',cursive;font-size:15px;letter-spacing:2px;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;-webkit-appearance:none">
-      <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/></svg>ï¸</span> REMOVE LIVE MATCH
+      <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/></svg></span> REMOVE LIVE MATCH
     </button>
     <button onclick="goToLiveDash()" style="width:100%;padding:10px;background:rgba(240,180,41,0.07);border:1px solid rgba(240,180,41,0.28);border-radius:var(--r-sm);color:var(--gold);font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:700;letter-spacing:2px;cursor:pointer;margin-top:8px;text-transform:uppercase;-webkit-appearance:none">
-      âï¸ Full Live Dashboard â
+      â Full Live Dashboard â
     </button>
   </div>`;
 }
@@ -3088,7 +3088,7 @@ async function syncLiveNow(btn){
   if(btn.querySelector("span:last-child")) btn.querySelector("span:last-child").innerText = "SYNCINGâ¦";
   btn.disabled = true;
   await saveLiveToAPI(s);
-  if(btn.querySelector("span:last-child")) btn.querySelector("span:last-child").innerText = "<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg> SYNCED!";
+ if(btn.querySelector("span:last-child")) btn.querySelector("span:last-child").innerText = "SYNCED!";
   setTimeout(()=>{ if(btn.querySelector("span:last-child")) btn.querySelector("span:last-child").innerText = origText; btn.disabled=false; }, 2000);
 }
 
@@ -3096,11 +3096,11 @@ async function removeLiveMatchFromViewer(){
   const s = getLive();
   if(!s){ alert("No live match found."); return; }
   const t1 = s.t1||"Team 1", t2 = s.t2||"Team 2";
-  if(!confirm(`â ï¸ Remove live match:\n${t1} vs ${t2}\n\nThis will clear the live score for all viewers.`)) return;
+  if(!confirm(`WARNING: Remove live match:\n${t1} vs ${t2}\n\nThis will clear the live score for all viewers.`)) return;
   localStorage.removeItem("psl_live");
   await saveLiveToAPI(null);
   document.getElementById("live-dot").classList.remove("show");
-  alert("<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg> Live match removed.");
+  alert("Live match removed.");
   loadLiveScore();
 }
 
@@ -3192,7 +3192,7 @@ function startLiveMatch(){
   saveLive(state);
   renderOrgLive();
   document.getElementById("live-dot").classList.add("show");
-  alert("<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="8"/></svg> Live match started! Viewers can see it in the Live tab.");
+  alert("Live match started! Viewers can see it in the Live tab.");
 }
 
 function renderOrgLiveControls(s){
@@ -3251,7 +3251,7 @@ function renderOrgLiveControls(s){
       <button class="sc-btn sc-btn-nb" onclick="recordDelivery('noball',1)">NB<br><span style="font-size:9px;font-family:'Barlow Condensed',sans-serif">NO BALL</span></button>
       <button class="sc-btn sc-btn-wd" onclick="recordDelivery('wide',1)">WD<br><span style="font-size:9px;font-family:'Barlow Condensed',sans-serif">WIDE</span></button>
       <button class="sc-btn sc-btn-ot" onclick="recordDelivery('overthrow',0)">OT<br><span style="font-size:9px;font-family:'Barlow Condensed',sans-serif">OVERTHR</span></button>
-      <button class="sc-btn sc-btn-undo" onclick="undoLastDelivery()">âµ<br>UNDO</button>
+      <button class="sc-btn sc-btn-undo" onclick="undoLastDelivery()">&larr;<br>UNDO</button>
     </div>
     <div style="font-size:10px;letter-spacing:1px;color:var(--muted);font-weight:700;margin-bottom:5px">CHANGE STRIKER / BOWLER</div>
     <div class="sc-select-row">
@@ -3286,7 +3286,7 @@ function renderOrgLiveControls(s){
     <!-- ââ EDIT LIVE MATCH INFO ââ -->
     <div style="margin-top:10px;background:rgba(240,180,41,0.04);border:1px solid rgba(240,180,41,0.18);border-radius:10px;overflow:hidden">
       <button onclick="toggleLiveEditPanel(this)" style="width:100%;padding:11px 14px;background:none;border:none;display:flex;align-items:center;justify-content:space-between;cursor:pointer;-webkit-appearance:none">
-        <span style="font-family:'Barlow Condensed',sans-serif;font-size:13px;font-weight:700;letter-spacing:1.5px;color:var(--gold)"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/></svg>ï¸ EDIT LIVE MATCH INFO</span>
+        <span style="font-family:'Barlow Condensed',sans-serif;font-size:13px;font-weight:700;letter-spacing:1.5px;color:var(--gold)"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/></svg> EDIT LIVE MATCH INFO</span>
         <span id="live-edit-arr" style="color:var(--gold);font-size:12px;transition:transform .25s">â¼</span>
       </button>
       <div id="live-edit-panel" style="display:none;padding:0 12px 14px">
@@ -3310,20 +3310,20 @@ function renderOrgLiveControls(s){
             <input class="sc-inp" id="le-venue" value="${s.venue||""}" placeholder="Ground name" style="margin-bottom:0">
           </div>
         </div>
-        <button onclick="saveLiveMatchInfo()" style="width:100%;padding:10px;background:rgba(240,180,41,0.15);border:1px solid rgba(240,180,41,0.4);border-radius:8px;color:var(--gold);font-family:'Bebas Neue',cursive;font-size:15px;letter-spacing:2px;cursor:pointer;-webkit-appearance:none">âï¸ UPDATE & SYNC ONLINE</button>
+        <button onclick="saveLiveMatchInfo()" style="width:100%;padding:10px;background:rgba(240,180,41,0.15);border:1px solid rgba(240,180,41,0.4);border-radius:8px;color:var(--gold);font-family:'Bebas Neue',cursive;font-size:15px;letter-spacing:2px;cursor:pointer;-webkit-appearance:none"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/></svg> UPDATE & SYNC ONLINE</button>
         <div id="live-edit-ok" style="display:none;text-align:center;font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:700;letter-spacing:1px;color:var(--green);margin-top:6px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg> Live match info updated!</div>
       </div>
     </div>
 
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px">
       <button onclick="syncLiveNow(this)" style="padding:11px 6px;background:rgba(0,214,143,0.1);border:1.5px solid rgba(0,214,143,0.4);border-radius:var(--r-sm);color:var(--green);font-family:'Bebas Neue',cursive;font-size:14px;letter-spacing:1.5px;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:2px;-webkit-appearance:none">
-        <span>âï¸</span><span>SYNC ONLINE</span>
+        <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/></svg></span><span>SYNC ONLINE</span>
       </button>
       <button onclick="removeLiveMatchFromViewer()" style="padding:11px 6px;background:rgba(228,0,43,0.08);border:1.5px solid rgba(228,0,43,0.3);border-radius:var(--r-sm);color:var(--red);font-family:'Bebas Neue',cursive;font-size:14px;letter-spacing:1.5px;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:2px;-webkit-appearance:none">
-        <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/></svg>ï¸</span><span>REMOVE MATCH</span>
+        <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/></svg></span><span>REMOVE MATCH</span>
       </button>
     </div>
-    <button class="btn-end-live" onclick="endLiveMatch()" style="margin-top:6px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"/></svg>ï¸ End Match & Save Stats</button>
+    <button class="btn-end-live" onclick="endLiveMatch()" style="margin-top:6px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"/></svg> End Match & Save Stats</button>
   </div>`;
 }
 
@@ -3388,7 +3388,7 @@ function changeBowler(idx){ const s=getLive();if(!s)return;s.currentBowlerIdx=pa
 function saveStatusMsg(){
   const s=getLive();if(!s)return;
   s.status=document.getElementById("sc-status-inp").value.trim();
-  saveLive(s); alert("<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg> Status updated!");
+  saveLive(s); alert("Status updated!");
 }
 
 function undoLastDelivery(){
@@ -3445,7 +3445,7 @@ function endLiveMatch(){
   // Clear on API too
   saveLiveToAPI(null);
   renderOrgLive();
-  alert("<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg> Match ended. Player stats synced online.");
+  alert("Match ended. Player stats synced online.");
 }
 
 async function syncPlayerStatsToAPI(){
@@ -3638,8 +3638,8 @@ function renderOrgStats(){
     <div class="hint-bar">Stats auto-calculated from live matches. Columns: Matches Â· Runs Â· Sixes Â· Fours Â· Wickets. Override manually if needed.</div>
     ${rows}
     <button onclick="openAddStatPlayer()" style="width:100%;padding:10px;background:rgba(0,214,143,0.08);border:1.5px dashed rgba(0,214,143,0.35);border-radius:8px;color:var(--green);font-family:'Barlow Condensed',sans-serif;font-size:13px;font-weight:700;cursor:pointer;margin-top:10px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5v14"/></svg> Add Player Manually</button>
-    <button onclick="syncPlayerStatsToAPI().then(()=>{syncBowlerStatsToAPI();alert('<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg> Stats synced online!')})" style="width:100%;padding:9px;background:rgba(26,143,255,0.1);border:1px solid rgba(26,143,255,0.3);border-radius:6px;color:var(--blue);font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:700;cursor:pointer;margin-top:7px">âï¸ Sync Stats Online Now</button>
-    <button onclick="clearAllStats()" style="width:100%;padding:9px;background:rgba(228,0,43,0.06);border:1px solid rgba(228,0,43,0.2);border-radius:6px;color:var(--red);font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:700;cursor:pointer;margin-top:7px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/></svg>ï¸ Clear All Stats</button>
+    <button onclick="syncPlayerStatsToAPI().then(()=>{syncBowlerStatsToAPI();alert(' Stats synced online!')})" style="width:100%;padding:9px;background:rgba(26,143,255,0.1);border:1px solid rgba(26,143,255,0.3);border-radius:6px;color:var(--blue);font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:700;cursor:pointer;margin-top:7px"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/></svg> Sync Stats Online Now</button>
+    <button onclick="clearAllStats()" style="width:100%;padding:9px;background:rgba(228,0,43,0.06);border:1px solid rgba(228,0,43,0.2);border-radius:6px;color:var(--red);font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:700;cursor:pointer;margin-top:7px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/></svg> Clear All Stats</button>
   </div>`;
   // Also render bowler stats section
   renderOrgBowlerStats();
@@ -3707,7 +3707,7 @@ function renderOrgPoints(){
     </div>
   </div>
   <div class="pts-edit-section">
-    <div class="pts-edit-title"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/></svg>ï¸ Edit Points & NRR</div>
+    <div class="pts-edit-title"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/></svg> Edit Points & NRR</div>
     <div class="hint-bar" style="margin-bottom:10px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg> Only the Organizer can save changes. Win = 2 pts, Loss = 0 pts.</div>
     ${editRows}
     <button class="btn-save-pts" onclick="saveAllPoints()"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15.2 3a2 2 0 0 1 1.4.6l3.8 3.8a2 2 0 0 1 .6 1.4V19a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"/><path d="M17 21v-7a1 1 0 0 0-1-1H8a1 1 0 0 0-1 1v7"/><path d="M7 3v4a1 1 0 0 0 1 1h7"/></svg> Save Points Table</button>
@@ -3716,7 +3716,7 @@ function renderOrgPoints(){
 
 async function saveAllPoints(){
   const btn=document.querySelector(".btn-save-pts");
-  btn.innerText="<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 22h14"/><path d="M5 2h14"/><path d="M17 22v-4.172a2 2 0 0 0-.586-1.414L12 12l-4.414 4.414A2 2 0 0 0 7 17.828V22"/><path d="M7 2v4.172a2 2 0 0 0 .586 1.414L12 12l4.414-4.414A2 2 0 0 0 17 6.172V2"/></svg> Savingâ¦"; btn.disabled=true;
+ btn.innerText="Savingâ¦"; btn.disabled=true;
   const promises=allTeams.map(async team=>{
     const m=parseInt(document.getElementById(`pe-m-${team.id}`)?.value||team.m||0);
     const w=parseInt(document.getElementById(`pe-w-${team.id}`)?.value||team.w||0);
@@ -3729,10 +3729,10 @@ async function saveAllPoints(){
   try{
     await Promise.all(promises);
     const res=await fetch(API); allTeams=await res.json();
-    btn.innerText="<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg> Saved!"; btn.disabled=false;
-    setTimeout(()=>{btn.innerText="<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15.2 3a2 2 0 0 1 1.4.6l3.8 3.8a2 2 0 0 1 .6 1.4V19a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"/><path d="M17 21v-7a1 1 0 0 0-1-1H8a1 1 0 0 0-1 1v7"/><path d="M7 3v4a1 1 0 0 0 1 1h7"/></svg> Save Points Table";},2000);
+ btn.innerText="Saved!"; btn.disabled=false;
+ setTimeout(()=>{btn.innerText="Save Points Table";},2000);
     renderOrgPoints(); loadStandings();
-  }catch{ btn.innerText="<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m15 9-6 6"/><path d="m9 9 6 6"/></svg> Error"; btn.disabled=false; alert("Save failed."); }
+ }catch{ btn.innerText="Error"; btn.disabled=false; alert("Save failed."); }
 }
 
 // Auto NRR formula helper (runs for - runs against per over)
@@ -3753,7 +3753,7 @@ async function lookupJoinCode(){
       const res = await fetch(API); const data = await res.json(); allTeams = data;
     }
     const team = allTeams.find(t=>(t.team_code||"").toUpperCase()===code);
-    if(!team){ errEl.innerText="<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m15 9-6 6"/><path d="m9 9 6 6"/></svg> No team found with that code. Check with your captain."; errEl.classList.add("show"); return; }
+ if(!team){ errEl.innerText="No team found with that code. Check with your captain."; errEl.classList.add("show"); return; }
     joinFoundTeam = team;
     document.getElementById("join-team-logo").src = (team.photos&&team.photos[0])||DEFAULT_LOGO;
     document.getElementById("join-team-name").innerText = team.team_name;
@@ -3761,10 +3761,10 @@ async function lookupJoinCode(){
     // Check if already on this team
     const myCode = localStorage.getItem("psl_code")||"";
     if(myCode.toUpperCase()===code){
-      document.getElementById("btn-join-confirm").innerText="<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg> Already on this team";
+ document.getElementById("btn-join-confirm").innerText="Already on this team";
       document.getElementById("btn-join-confirm").disabled=true;
     } else {
-      document.getElementById("btn-join-confirm").innerText="<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg> JOIN THIS TEAM";
+ document.getElementById("btn-join-confirm").innerText="JOIN THIS TEAM";
       document.getElementById("btn-join-confirm").disabled=false;
     }
     resEl.classList.add("show");
@@ -3779,10 +3779,10 @@ function confirmJoin(){
   myTeam = joinFoundTeam;
   myRole = "player";
   document.getElementById("myteam-dot").classList.add("show");
-  document.getElementById("btn-join-confirm").innerText="<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg> Joined!";
+ document.getElementById("btn-join-confirm").innerText="Joined!";
   document.getElementById("btn-join-confirm").disabled=true;
   updateRegTabVisibility();
-  alert(`<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg> You've joined ${joinFoundTeam.team_name}! Go to My Team to view your squad.`);
+  alert(`You've joined ${joinFoundTeam.team_name}! Go to My Team to view your squad.`);
 }
 
 // ââââââââââââââââââââââââââââââââ
@@ -3892,7 +3892,7 @@ function renderOrgBowlerStats(){
     <div class="hint-bar">Columns: Matches Â· Wickets Â· Overs bowled (for Economy calculation).</div>
     ${rows}
     <button onclick="openAddBowlerPlayer()" style="width:100%;padding:10px;background:rgba(0,214,143,0.08);border:1.5px dashed rgba(0,214,143,0.35);border-radius:8px;color:var(--green);font-family:'Barlow Condensed',sans-serif;font-size:13px;font-weight:700;cursor:pointer;margin-top:10px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5v14"/></svg> Add Bowler Manually</button>
-    <button onclick="syncBowlerStatsToAPI().then(()=>alert('<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg> Bowler stats synced!'))" style="width:100%;padding:9px;background:rgba(0,214,143,0.1);border:1px solid rgba(0,214,143,0.3);border-radius:6px;color:var(--green);font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:700;cursor:pointer;margin-top:7px">âï¸ Sync Bowler Stats Online</button>
+    <button onclick="syncBowlerStatsToAPI().then(()=>alert(' Bowler stats synced!'))" style="width:100%;padding:9px;background:rgba(0,214,143,0.1);border:1px solid rgba(0,214,143,0.3);border-radius:6px;color:var(--green);font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:700;cursor:pointer;margin-top:7px"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/></svg> Sync Bowler Stats Online</button>
   </div>`;
 }
 
@@ -4128,7 +4128,7 @@ async function renderOrgChat(){
   el.innerHTML = `<div class="card">
     <div class="card-header"><div class="card-icon" style="background:rgba(26,143,255,0.14)"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div><div class="card-title">Chat Moderation</div></div>
     <div class="hint-bar">As organizer you can delete any message. Tap <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg> to remove.</div>
-    <button onclick="clearAllChat()" style="width:100%;padding:10px;background:rgba(228,0,43,0.08);border:1px solid rgba(228,0,43,0.25);border-radius:var(--r-sm);color:var(--red);font-family:'Barlow Condensed',sans-serif;font-size:13px;font-weight:700;cursor:pointer;margin-bottom:12px;letter-spacing:1px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/></svg>ï¸ Clear All Chat</button>
+    <button onclick="clearAllChat()" style="width:100%;padding:10px;background:rgba(228,0,43,0.08);border:1px solid rgba(228,0,43,0.25);border-radius:var(--r-sm);color:var(--red);font-family:'Barlow Condensed',sans-serif;font-size:13px;font-weight:700;cursor:pointer;margin-bottom:12px;letter-spacing:1px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/></svg> Clear All Chat</button>
     ${msgs.slice().reverse().map(m=>`<div style="display:flex;align-items:flex-start;gap:8px;background:var(--card2);border:1px solid var(--border);border-radius:var(--r-sm);padding:9px 11px;margin-bottom:6px">
       <div style="flex:1;min-width:0">
         <div style="font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:700;color:var(--blue);letter-spacing:.5px">${escHtml(m.name)} <span style="color:var(--muted);font-weight:500">${m.ts?new Date(m.ts).toLocaleTimeString([],{hour:"2-digit",minute:"2-digit"}):""}</span></div>
@@ -4249,7 +4249,7 @@ function renderPollCard(poll, myVotes, isAdmin){
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/><path d="M8 16H3v5"/></svg> Reset Votes
       </button>
       <button onclick="deletePoll('${poll.id}')" style="padding:9px 10px;background:rgba(228,0,43,0.08);border:1px solid rgba(228,0,43,0.25);border-radius:var(--r-sm);color:var(--red);font-family:'Barlow Condensed',sans-serif;font-size:14px;cursor:pointer">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/></svg>ï¸
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/></svg>
       </button>
     </div>` : "";
 
@@ -4332,7 +4332,7 @@ async function renderOrgVoting(){
     </div>
     <div class="form-label" style="margin-bottom:6px">POLL OPTIONS</div>
     <div class="poll-opt-editor" id="poll-opt-editor"></div>
-    <button class="btn-add-poll-opt" onclick="addPollOptRow()">ï¼ Add Option</button>
+    <button class="btn-add-poll-opt" onclick="addPollOptRow()">+ Add Option</button>
     <button class="btn-publish-poll" style="margin-top:10px" onclick="publishPoll()"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><path d="M5 7c0-1.1.9-2 2-2h10a2 2 0 0 1 2 2v12H5V7Z"/><path d="M22 19H2"/></svg> PUBLISH POLL</button>
   </div>`;
 
@@ -4388,14 +4388,14 @@ const pollLogoCache = {};
 async function uploadPollOptLogo(inp, idx){
   if(!inp.files[0]) return;
   const lbl = document.getElementById(`popt-logo-prev-${idx}`);
-  if(lbl){ lbl.style.display="block"; lbl.innerText="<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 22h14"/><path d="M5 2h14"/><path d="M17 22v-4.172a2 2 0 0 0-.586-1.414L12 12l-4.414 4.414A2 2 0 0 0 7 17.828V22"/><path d="M7 2v4.172a2 2 0 0 0 .586 1.414L12 12l4.414-4.414A2 2 0 0 0 17 6.172V2"/></svg>"; }
+ if(lbl){ lbl.style.display="block"; lbl.innerText=""; }
   const fd = new FormData(); fd.append("image", inp.files[0]);
   try{
     const r = await fetch(`https://api.imgbb.com/1/upload?key=${IMGBB}`,{method:"POST",body:fd});
     const j = await r.json();
-    if(j.data?.url){ pollLogoCache[idx] = j.data.url; if(lbl){ lbl.innerText="<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg> Logo ready"; } }
-    else { if(lbl) lbl.innerText="<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m15 9-6 6"/><path d="m9 9 6 6"/></svg> Failed"; }
-  } catch(e){ if(lbl) lbl.innerText="<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m15 9-6 6"/><path d="m9 9 6 6"/></svg> Error"; }
+ if(j.data?.url){ pollLogoCache[idx] = j.data.url; if(lbl){ lbl.innerText="Logo ready"; } }
+ else { if(lbl) lbl.innerText="Failed"; }
+ } catch(e){ if(lbl) lbl.innerText="Error"; }
 }
 
 async function publishPoll(){
@@ -4415,7 +4415,7 @@ async function publishPoll(){
   document.getElementById("new-poll-q").value = "";
   pollOptCount = 2;
   Object.keys(pollLogoCache).forEach(k=>delete pollLogoCache[k]);
-  alert("<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg> Poll published! Fans can vote now.");
+  alert("Poll published! Fans can vote now.");
   renderOrgVoting();
   loadVoteTab();
 }
@@ -4451,8 +4451,8 @@ function renderSchedList(){
           ${resultHtml}
         </div>
         <div class="sched-item-actions">
-          <button class="btn-edit-match" onclick="openEditMatch(${i})"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/></svg>ï¸ Edit</button>
-          <button class="btn-delete-match" onclick="deleteMatch(${i})"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/></svg>ï¸ Del</button>
+          <button class="btn-edit-match" onclick="openEditMatch(${i})"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/></svg> Edit</button>
+          <button class="btn-delete-match" onclick="deleteMatch(${i})"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/></svg> Del</button>
         </div>
       </div>
       <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
@@ -4550,7 +4550,7 @@ async function renderOrgRecentMatches(){
         <div style="flex:1;font-family:'Barlow Condensed',sans-serif;font-size:13px;font-weight:700;color:#fff">${escHtml(r.t1name||"")} vs ${escHtml(r.t2name||"")}
           <div style="font-size:10px;color:var(--muted);margin-top:1px">${r.date||"TBD"} ${r.result?"Â· <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg> "+r.result:""}</div>
         </div>
-        <button onclick="deleteRecentMatch(${i})" class="btn-delete-recent"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/></svg>ï¸</button>
+        <button onclick="deleteRecentMatch(${i})" class="btn-delete-recent"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/></svg></button>
       </div>`).join("") : `<div class="group-empty">No recent matches added yet.</div>`}
   </div>`;
 }
@@ -4563,7 +4563,7 @@ async function addToRecentMatches(m){
   recent.unshift({...m, addedAt: Date.now()});
   await saveRecentMatchesToAPI(recent);
   renderOrgRecentMatches();
-  alert("<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg> Match added to Recent Matches!");
+  alert("Match added to Recent Matches!");
 }
 
 async function deleteRecentMatch(i){
@@ -4606,7 +4606,7 @@ async function savePushNotifsToAPI(notifs){
 function showInAppNotification(icon, title, msg, image){
   const toast = document.getElementById("in-app-notif-toast");
   if(!toast) return;
-  document.getElementById("ian-icon").innerText = icon||"<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg>";
+ document.getElementById("ian-icon").innerText = icon||"";
   document.getElementById("ian-title").innerText = title||"";
   document.getElementById("ian-msg").innerText = msg||"";
   document.getElementById("ian-time").innerText = new Date().toLocaleTimeString([],{hour:"2-digit",minute:"2-digit"});
@@ -4796,7 +4796,7 @@ async function sendPushNotification(){
   const trimmed = notifs.slice(0,20);
   await savePushNotifsToAPI(trimmed);
   const ok = document.getElementById("pn-ok"); if(ok){ ok.style.display="block"; setTimeout(()=>ok.style.display="none",3000); }
-  alert(`<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg> Notification "${title}" sent to all users!`);
+  alert(`Notification "${title}"sent to all users!`);
   renderOrgPushNotif();
 }
 
